@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entre Paginas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="img/icons8-libro-cómico-32.png" />
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Agrega aquí el logo de tu tienda -->
+                <img src="img/logo2.png " alt="Logo Tienda de Libros" />
+                <span class="site-name">Entre Paginas</span>
+            </div>
+            <nav id="navbar" class="nav">
+                <button id="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#tabla">Precios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Portada principal -->
+        <section id="hero" class="hero">
+            <div class="hero-content container">
+                <h1>Descubre tu próxima gran lectura</h1>
+                <p>Explora nuestro catálogo exclusivo de libros para todos los gustos.</p>
+                <button class="btn-primary" onclick="location.href='#galeria'">Ver Catálogo</button>
+            </div>
+        </section>
+
+        <!-- Servicios / Características -->
+        <section id="servicios" class="servicios container">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards">
+                <article class="card">
+                    <!-- Icono o imagen para el servicio -->
+                    <img src="img/icons8-envío-64.png" alt="Envío rápido" />
+                    <h3>Envío rápido</h3>
+                    <p>Recibe tus libros en tiempo récord, directo a tu puerta.</p>
+                </article>
+                <article class="card">
+                    <img src="img/icons8-descuento-64.png" alt="Descuentos exclusivos" />
+                    <h3>Descuentos exclusivos</h3>
+                    <p>Ofertas especiales para nuestros clientes frecuentes.</p>
+                </article>
+                <article class="card">
+                    <img src="img/icons8-últimas-24-horas-64.png" alt="Soporte 24/7" />
+                    <h3>Soporte 24/7</h3>
+                    <p>Atención personalizada para resolver todas tus dudas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Galería / Portafolio -->
+        <section id="galeria" class="galeria container">
+            <h2>Catálogo de Libros</h2>
+            <div class="grid-gallery">
+                <!-- Reemplaza las imágenes con las portadas de tus libros -->
+                <img src="img/El nombre del viento.webp" alt="Libro 1" />
+                <img src="img/Los_juegos_del_hambre.webp" alt="Libro 2" />
+                <img src="img/Fahrenheit_451.webp" alt="Libro 3" />
+                <img src="img/meridiano-de-sangre.jpg" alt="Libro 4" />
+                <img src="img/it.jpg" alt="Libro 5" />
+                <img src="img/quijote.webp" alt="Libro 6" />
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto" class="contacto container">
+            <h2>Contacto</h2>
+            <form id="contact-form" action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Tabla con información -->
+        <section id="tabla" class="tabla container">
+            <h2>Precios y Horarios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Disponibilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>El Nombre del viento</td>
+                        <td>$72.00</td>
+                        <td>En stock</td>
+                    </tr>
+                    <tr>
+                        <td>Los Juegos del Hambre</td>
+                        <td>$55.00</td>
+                        <td>En stock</td>
+                    </tr>
+                    <tr>
+                        <td>Fahrenheit 451</td>
+                        <td>$47.00</td>
+                        <td>En stock</td>
+                    </tr>
+                    <tr>
+                        <td>Meridiano de Sangre</td>
+                        <td>$64.00</td>
+                        <td>En stock</td>
+                    </tr>
+                    <tr>
+                        <td>IT</td>
+                        <td>$40.00</td>
+                        <td>Agotado</td>
+                    </tr>
+                    <tr>
+                        <td>DON QUIJOTE DE LA MANCHA </td>
+                        <td>$75.00</td>
+                        <td>En stock</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Horario de atención</h3>
+            <ul>
+                <li>Lunes a Viernes: 9:00 AM - 7:00 PM</li>
+                <li>Sábado: 10:00 AM - 5:00 PM</li>
+                <li>Domingo: Cerrado</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 Entre Paginas</p>
+            <nav class="social-nav">
+                <ul>
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
